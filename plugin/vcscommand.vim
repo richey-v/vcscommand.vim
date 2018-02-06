@@ -553,9 +553,9 @@ function! s:EditFile(command, originalBuffer, statusText)
 		let editCommand = VCSCommandGetOption('VCSCommandEdit', 'split')
 		if editCommand == 'split'
 			if VCSCommandGetOption('VCSCommandSplit', 'horizontal') == 'horizontal'
-				rightbelow split
+				leftabove split
 			else
-				vert rightbelow split
+				vert leftabove split
 			endif
 		endif
 
